@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>VVN Best - Contact</title>
+		<link href="style.css" rel = stylesheet /> 
+	</head>
+	<body>
+		<div class="header-bg">
+			<!--Begin Wrapper-->
+			<div class="wrapper">
+				<!--Begin Header-->
+				<div class="header">
+					<a href="index.html">
+						<img src="images/header_logo.png" />
+					</a>
+				</div>
+				<!--Einde Header-->
+				<!--Begin Menu-->
+				<div class="menu">
+					<a href="verkeersexamen.html"><div class="item"><p>Verkeersexamen</p></div></a>
+					<a href="caravancontrole.html"><div class="item"><p>Caravan Controle</p></div></a>
+					<a href="acties.html"><div class="item"><p>Acties</p></div></a>
+					<a href="contact.html"><div class="item"><p>Contact</p></div></a>
+				</div>
+				<!--Einde Menu-->
+				<!--Begin Container-->
+				<div class="container">
+					<p><?php echo $feedback; ?></p>
+					<form action="PHP/sendEmail.php" method="post">
+						<ul>
+							<li>
+								<label for="tbSender">Afzender:</label><br />
+								<input type="text" name="tbSender" id="tbSender" /><br />
+							</li>
+							<li>
+								<label for="tbEmail">E-mailadres:</label><br />
+								<input type="text" name="tbEmail" id="tbEmail" /><br />
+							</li>
+							<li>
+								<label for="tbPhone">Telefoon:</label><br />
+								<input type="text" name="tbPhone" id="tbPhone" /><br />
+							</li>
+							<li>
+								<label for="taReaction">Reactie</label><br />
+								<textarea id="taReaction" name="taReaction" cols="42" rows="9"></textarea><br />
+							</li>
+							<li>
+								<input type="submit" value="Verzenden" name="btnSend" id="btnSend"></input>
+							</li>
+						</ul>
+					</form>
+				</div>
+				<!--Einde Container-->
+			</div>
+			<!--Einde Wrapper-->
+		</div>
+		<div class="footer">
+			<p>&copy Copyright CodePanda 2014. Alle rechten voorbehouden.</p>
+		</div>
+	</body>
+</html>
